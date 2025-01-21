@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8b07629a75.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#welcome-section" style="text-decoration: none;" class="navlink">About Me</a>
+            <a href="#projects" style="text-decoration: none;" class="navlink">Projects</a>
+            <a href="#contactMe" style="text-decoration: none;" class="navlink">Contact Me</a>
+        </nav>
+    </header>
+
+    <section id="welcome-section">
+        <div id="intro">
+            <h1>I am Abby Gamboa</h1>
+            <h2>Front-end web developer &<br>CS student at EIU</h2>
+            <p>I believe creativity and logical thinking are not mutually exclusive experiences. 
+                Through web development, the user receives a beautiful incorporation of both qualities. 
+                My goal is to consistently provide both a captivating and functional environment for businesses and users alike.
+                </p>
+            
+        </div>
+        <img src="PortfolioPics/profilePic.jpeg" alt="" id="profile">
+    </section>
+
+
+
+    <section id="projects">
+        <h2>PROJECTS: </h2>
+        <div class="flexContent">
+            <div class="project-tile fade" id="slide1">
+                <a href="https://abbygamboa.github.io/EmaWebsite/" target="_blank"> <img src="PortfolioPics/LandingPage.png" style="width:100%; height: 500px;" id="landing"></a>
+            </div>
+
+            <div class="project-tile fade">
+               <a href="https://abbygamboa.github.io/C-Documentation/" target="_blank"> <img src="PortfolioPics/CDoc.png" style="width: 100%; height: 500px;" id="langDoc"></a>
+            </div>
+
+            <div class="project-tile fade" id="secondProj">
+                <a href="https://github.com/AbbyGamboa/Music-Recommendation/tree/main" target="_blank"> <img src="PortfolioPics/Music Rec.png" style="height: 500px;" id="musicRec"></a>
+            </div>
+
+            
+
+            <a class="previous" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+        <br>
+
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+
+    </section>
+
+
+    
+    <section id="contactMe">
+
+        <h1>Let's get in touch:</h1>
+        <a href="https://www.linkedin.com/in/abby-gamboa-06x0026/" target="_blank"><i class="fa-brands fa-linkedin" id="linked"></i></a>
+        <a href="https://github.com/AbbyGamboa" target="_blank"><i class="fa-brands fa-square-github" id="github"> </i></a>
+        <a href="mailto:avgamboa2004@gmail.com" target="_blank" class="black"><i class="fa-solid fa-envelope" id="gmail"></i></a>
+    </section>
+    
+</body>
+</html>
