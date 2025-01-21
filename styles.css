@@ -30,6 +30,10 @@ header{
     margin-left: 50px;
 }
 
+.navlink:hover{
+    color: black;
+}
+
 #welcome-section{
     font-family: boldAbby;
     position: absolute;
